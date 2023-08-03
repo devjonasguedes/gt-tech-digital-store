@@ -1,0 +1,302 @@
+/**
+  * CSS RESET E CLASSES GERAIS
+*/
+
+:root {
+  --color-primary: #576bf8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #111;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/**
+  * HEADER
+*/
+
+.header {
+  padding: 30px 0;
+  position: absolute;
+  width: 100%;
+}
+
+.header-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.brand {
+  position: relative;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.brand .ico {
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.menu ul li a {
+  color: #dcdcdc;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.menu ul li a:hover {
+  color: #fff;
+}
+
+/**
+  * HERO
+*/
+
+.hero {
+  padding-top: 110px;
+  padding-bottom: 60px;
+  background-image: url('../images/bg-hero2.jpg');
+  background-size: cover;
+  background-position: center;
+  animation: moveBg 10s ease-in-out infinite alternate;
+}
+
+@keyframes moveBg {
+  0% {
+    background-position: 0 center;
+  }
+  100% {
+    background-position: -500px center;
+  }
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-size: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  line-height: 1.2;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.hero-content .hand {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  transform: translateX(-50%);
+  margin: auto;
+  width: 500px;
+  animation: animateJoystick 4s ease-in-out infinite alternate;
+}
+
+@keyframes animateJoystick {
+  0% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(40px);
+  }
+}
+
+.hero-content > div {
+  position: relative;
+  z-index: 1;
+  max-width: 992px;
+}
+
+.hero-content a {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: var(--color-primary);
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+
+/**
+  * FEATURED PURCHASE
+*/
+
+.featured-purchases {
+  padding: 60px 0;
+}
+
+.featured-purchases-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.featured-purchases-title h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.featured-purchases-title p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.featured-purchases-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.featured-purchases-item {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.featured-purchases-item-image {
+  height: 200px;
+}
+
+.featured-purchases-item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featured-purchases-item-content {
+  padding: 20px;
+  background-color: #222;
+}
+
+.featured-purchases-item-content h3 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.featured-purchases-item-content p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  opacity: .6;
+}
+
+.featured-purchases-item-content a {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #111;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+
+
+/**
+  * ALL GAMES
+*/
+
+.all-games {
+  padding: 60px 0;
+}
+
+.all-games-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.all-games-title h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.all-games-title p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
