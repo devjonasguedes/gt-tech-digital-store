@@ -300,3 +300,53 @@ h6 {
   font-weight: 400;
   line-height: 1.5;
 }
+
+.all-games-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  gap: 20px;
+}
+
+.subtitulo-lista {
+  color: #FFF;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+padding-left: 10px;
+margin-top: 10px;
+}
+
+
+.lista-jogos {
+  background: #222;
+  border-radius: 5px;
+}
+
+.listas-jogos, p {
+  color: #9A9A9A;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+
+.botao-lista {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #111;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  margin: 14px ;
+  margin-bottom: 20px;
+}
+
+.botao-lista:hover {
+  background: #000;
+}
+
+
