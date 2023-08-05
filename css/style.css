@@ -349,4 +349,32 @@ margin-top: 10px;
   background: #000;
 }
 
+.navegacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 10px;
+  
+  
+}
+
+.navegacao a {
+  text-decoration: none;
+  background: #9A9A9A;
+  border-radius: 100px;
+  width: 25px;
+  height: 25px;
+  color: #FFF;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 5px;
+}
+
+.navegacao a:hover {
+  background: #576BF8;
+}
 
