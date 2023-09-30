@@ -35,7 +35,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {
@@ -119,7 +119,7 @@ h6 {
 .hero {
   padding-top: 110px;
   padding-bottom: 60px;
-  background-image: url('../images/bg-hero2.jpg');
+  background-image: url("../images/bg-hero2.jpg");
   background-size: cover;
   background-position: center;
   animation: moveBg 10s ease-in-out infinite alternate;
@@ -203,8 +203,11 @@ h6 {
   color: white;
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> d5307a7fe0f932d54838036c431114c2f4ee5086
 /**
   * FEATURED PURCHASE
 */
@@ -277,7 +280,7 @@ h6 {
   font-weight: 400;
   line-height: 1.5;
   margin-bottom: 10px;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .featured-purchases-item-content a {
@@ -291,8 +294,6 @@ h6 {
   transition: all 0.3s ease;
   color: white;
 }
-
-
 
 /**
   * ALL GAMES
@@ -323,7 +324,7 @@ h6 {
 
 .all-games-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
 }
 @media (max-width: 800px) {
@@ -333,22 +334,23 @@ h6 {
 }
 
 .subtitulo-lista {
-  color: #FFF;
-font-size: 14px;
-font-style: normal;
-font-weight: 700;
-padding-left: 10px;
-margin-top: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  padding-left: 10px;
+  margin-top: 10px;
 }
-
 
 .lista-jogos {
   background: #222;
   border-radius: 5px;
+  overflow: hidden;
 }
 
-.listas-jogos, p {
-  color: #9A9A9A;
+.listas-jogos,
+p {
+  color: #9a9a9a;
   font-size: 10px;
   font-style: normal;
   font-weight: 600;
@@ -366,7 +368,7 @@ margin-top: 10px;
   font-weight: 500;
   text-transform: uppercase;
   color: white;
-  margin: 14px ;
+  margin: 14px;
   margin-bottom: 20px;
 }
 
@@ -380,17 +382,15 @@ margin-top: 10px;
   align-items: center;
   padding: 50px;
   gap: 10px;
-  
-  
 }
 
 .navegacao a {
   text-decoration: none;
-  background: #9A9A9A;
+  background: #9a9a9a;
   border-radius: 100px;
   width: 25px;
   height: 25px;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 12px;
   font-style: normal;
@@ -400,10 +400,11 @@ margin-top: 10px;
 }
 
 .navegacao a:hover {
-  background: #576BF8;
+  background: #576bf8;
 }
 
 .rodape {
+<<<<<<< HEAD
   display: grid;
   justify-content: center;
   gap: 20px;
@@ -413,14 +414,36 @@ margin-top: 10px;
   display: grid;
   text-transform: uppercase;
   color: #FFF;
+=======
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  padding: 35px 0;
+}
+
+.rodape h1 {
+  display: grid;
+  text-transform: uppercase;
+  color: #fff;
+>>>>>>> d5307a7fe0f932d54838036c431114c2f4ee5086
   justify-content: center;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> d5307a7fe0f932d54838036c431114c2f4ee5086
 .rodape p {
   margin-top: 15px;
   text-align: center;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> d5307a7fe0f932d54838036c431114c2f4ee5086
