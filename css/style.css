@@ -44,6 +44,14 @@ h6 {
   margin: 0 auto;
 }
 
+@media (max-width: 800px) 
+{
+  .container h2 {
+    display: none;
+  }
+}
+
+
 /**
   * HEADER
 */
@@ -143,6 +151,12 @@ h6 {
   line-height: 1.2;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+@media (max-width: 800px) {
+  .hero-content h1 {
+    font-size: 50px;
+    
+  }
+}
 
 .hero-content h2 {
   font-size: 18px;
@@ -190,6 +204,7 @@ h6 {
 }
 
 
+
 /**
   * FEATURED PURCHASE
 */
@@ -222,6 +237,11 @@ h6 {
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   margin-top: 60px;
+}
+@media (max-width: 800px) {
+  .featured-purchases-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .featured-purchases-item {
@@ -306,6 +326,11 @@ h6 {
   grid-template-columns: 1fr 1fr 1fr 1fr ;
   gap: 20px;
 }
+@media (max-width: 800px) {
+  .all-games-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 .subtitulo-lista {
   color: #FFF;
@@ -376,5 +401,26 @@ margin-top: 10px;
 
 .navegacao a:hover {
   background: #576BF8;
+}
+
+.rodape {
+  display: grid;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+.rodape h1 {
+  display: grid;
+  text-transform: uppercase;
+  color: #FFF;
+  justify-content: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.rodape p {
+  margin-top: 15px;
+  text-align: center;
 }
 
